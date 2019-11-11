@@ -80,5 +80,5 @@ build xdebug PHP_VERSION="$version" XDEBUG_VERSION="$XDEBUG_VERSION"
 
 if test "$BUILDKITE_BRANCH" == master && test "$BUILDKITE_PULL_REQUEST" == false; then
   echo "--- Push"
-  # docker push "$repository"
+  docker push "$repository"
 fi
