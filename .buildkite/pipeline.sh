@@ -14,7 +14,8 @@ declare -A php_versions=(
   [7.0.33]=""
   [7.1.33]=""
   [7.2.25]=""
-  [7.3.12]="7 latest"
+  [7.3.12]=""
+  [7.4.0]="7 latest"
 )
 
 # XDebug sometimes drops support for EOL'ed PHP versions, so we can't use the stable
