@@ -13,9 +13,9 @@ declare -A php_versions=(
   [5.6.40]="5"
   [7.0.33]=""
   [7.1.33]=""
-  [7.2.26]=""
-  [7.3.13]=""
-  [7.4.1]="7 latest"
+  [7.2.27]=""
+  [7.3.14]=""
+  [7.4.2]="7 latest"
 )
 
 # XDebug sometimes drops support for EOL'ed PHP versions, so we can't use the stable
@@ -24,6 +24,7 @@ declare -A php_versions=(
 declare -A xdebug_overrides=(
   # [PHP minor version]=XDebug version needed
   [5.6]=2.5.5
+  [7.0]=2.8.1
 )
 
 # Usage: create-step <version>
