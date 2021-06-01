@@ -10,21 +10,25 @@ shopt -s extglob
 # series as "5" (since it's the latest PHP 5 release).
 declare -A php_versions=(
   # [PHP version]=<extra tags>
-  [5.6.40]="5"
-  [7.0.33]=""
-  [7.1.33]=""
-  [7.2.31]=""
-  [7.3.19]=""
-  [7.4.7]="7 latest"
+  # [5.6.40]="5"
+  # [7.0.33]=""
+  # [7.1.33]=""
+  [7.2.33]=""
+  [7.3.28]=""
+  [7.4.19]="7"
+  [8.0.6]="8 latest"
 )
 
 # XDebug sometimes drops support for EOL'ed PHP versions, so we can't use the stable
 # channel for that version. That's where this array comes in. If a version isn't in here,
 # then it means it's still safe to use the stable channel when building the PHP image.
+#
+# TODO: Implement support for XDebug 3.
 declare -A xdebug_overrides=(
   # [PHP minor version]=XDebug version needed
-  [5.6]=2.5.5
-  [7.0]=2.8.1
+  [7.2]=2.9.8
+  [7.3]=2.9.8
+  [7.4]=2.9.8
 )
 
 # Usage: create-step <version>

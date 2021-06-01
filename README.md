@@ -12,17 +12,18 @@ Images built from this repository are used as bases for serving WordPress websit
 ## PHP Versions and Tags
 
 - Currently supported by PHP:
+
+  - `8.0`, `8.0-xdebug`
+  - `7.4`, `7.4-xdebug`
   - `7.3`, `7.3-xdebug`
-  - `7.2`, `7.2-xdebug`
-  - `7.1`, `7.1-xdebug`
 
 - End-of-life for legacy projects:
-  - `7.0`, `7.0-xdebug`
-  - `5.6`, `5.6-xdebug`
+
+  - `7.2`, `7.2-xdebug`
 
 Images tagged with `-xdebug` contain XDebug installed but disabled; at runtime use `docker-php-ext-enable xdebug` to enable.
 
-The tags `7`, `7-debug`, `5`, and `5-debug` are available for quick testing when a specific version isn't needed.
+The tags `7`, `7-debug`, `8`, and `8-debug` are available for quick testing when a specific version isn't needed.
 
 # License
 
