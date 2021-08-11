@@ -1,5 +1,5 @@
 ARG PHP_VERSION
-FROM php:${PHP_VERSION}-fpm-alpine AS base
+FROM php:${PHP_VERSION}-fpm-alpine3.13 AS base
 
 COPY --from=forumone/f1-ext-install:latest \
   /f1-ext-install \
