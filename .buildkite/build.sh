@@ -96,5 +96,5 @@ build xdebug PHP_VERSION="$version" XDEBUG_VERSION="$XDEBUG_VERSION"
 
 if should-push; then
   echo "--- Push"
-  docker push "$repository"
+  docker push --all-tags "$repository"
 fi
